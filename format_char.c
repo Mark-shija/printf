@@ -26,7 +26,7 @@ int print_char(va_list c)
  * Return: 1
  */
 
-int print_perctg()
+int print_perctg(void)
 {
 	_putchar('%');
 

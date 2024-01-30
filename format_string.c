@@ -4,7 +4,8 @@
 #include <stdarg.h>
 
 /*
- * print_string - prints string
+ * print_string - prints string on std output
+ * an return number of characters printed
  * @s: a string to be printed
  * Return: Number of characters printed
  */
