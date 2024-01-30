@@ -7,7 +7,7 @@
  * _printf - prints a character on stdout
  * @format: a character string to be printed
  * Return: always an integer
- */
+ *
 int _printf(const char *format, ...)
 {
 	int print_char = 0;
@@ -60,4 +60,4 @@ int _printf(const char *format, ...)
 
 	return (print_char);
 }
-
+*/
