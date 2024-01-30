@@ -9,7 +9,7 @@
  * Return: Number of characters printed
  */
 
-int print_string(va_list)
+int print_string(va_list s)
 {
 	int i;
 	char *str;
@@ -25,5 +25,5 @@ int print_string(va_list)
 		i++;
 	}
 
-	return (1);
+	return (i);
 }
