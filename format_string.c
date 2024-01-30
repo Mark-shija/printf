@@ -17,10 +17,12 @@ int print_string(va_list s)
 
 	if (str == NULL)
 		str = "(null)";
-	
-	for (i = 0; str[i] != '\0'; i++)
+
+	while (str[i])
 	{
 		_putchar(str[i]);
+		
+		i++;
 	}
 
 	return (1);
