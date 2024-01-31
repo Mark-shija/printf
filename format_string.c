@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdlib.h>
 #include "main.h"
 #include <unistd.h>
@@ -14,16 +15,23 @@ int print_string(va_list s)
 {
 	/* Implementation of print_string function */
 
-	int count = 0;
+	char *str;
+	int len, i;
 	
-	char *str = va_arg(s, char*);
-
-	while (*str)
+	str = va_arg(s, char*);
+	if (str == NULL)
 	{
-		write(1, str, 1);
-		count++;
-		str++;
+		str = "(null)";
+		len = strlen(str);
+		for (i = 0; i < len; i++)
+			_putchar(str[i]);
+		return (len);
 	}
-
-	return (count);
-}
+		else
+		{
+			len = strlen(str);
+			for (i = 0; i < len; i++)
+				_putchar(str[i]);
+			return (len);
+		}
+}	
