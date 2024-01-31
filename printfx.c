@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include "main.h"
 
-/*
+/**
  * find_func - finds the format printing function
  * triggers the printing function
  * @format: character to be printed on std out

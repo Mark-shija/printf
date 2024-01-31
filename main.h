@@ -17,9 +17,15 @@ int print_hexadec_X(va_list X);
 int print_unsigned(va_list u);
 int print_octadec(va_list o);
 
+/**
+ * struct text_format - identifies text forrmat
+ * @identify: A string checking the format
+ * @fmt: A function pointer to matching
+ * formarting function
+ */
 typedef struct text_format
 {
 	char *identify;
 	int (*fmt)(va_list);
-}text_f;
+} text_f;
 #endif

@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <stdarg.h>
 
-/*
+/**
  * print_string - prints string on std output
  * an return number of characters printed
  * @s: a string to be printed
@@ -17,7 +17,7 @@ int print_string(va_list s)
 
 	char *str;
 	int len, i;
-	
+
 	str = va_arg(s, char*);
 	if (str == NULL)
 	{
@@ -34,4 +34,4 @@ int print_string(va_list s)
 				_putchar(str[i]);
 			return (len);
 		}
-}	
+}

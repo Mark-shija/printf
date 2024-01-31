@@ -23,7 +23,7 @@ int print_char(va_list c)
 	return (1);
 }
 
-/*
+/**
  * print_perctg - prints a character % on std out
  * Return: 1
  */
