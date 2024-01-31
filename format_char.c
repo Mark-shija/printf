@@ -12,6 +12,8 @@
 
 int print_char(va_list c)
 {
+	/* Implementation of print_char function */
+
 	char txt;
 
 	txt = va_arg(c, int);
@@ -28,6 +30,8 @@ int print_char(va_list c)
 
 int print_perctg(void)
 {
+	/* Implementation of print_perctg function */
+
 	_putchar('%');
 
 	return (1);

@@ -12,19 +12,18 @@
 
 int print_string(va_list s)
 {
-	int i;
-	char *str;
+	/* Implementation of print_string function */
 
-	str = va_arg(s, char*);
+	int count = 0;
+	
+	char *str = va_arg(s, char*);
 
-	if (str == NULL)
-		str = "(null)";
-	while (str[i])
+	while (*str)
 	{
-		_putchar(str[i]);
-
-		i++;
+		write(1, str, 1);
+		count++;
+		str++;
 	}
 
-	return (i);
+	return (count);
 }

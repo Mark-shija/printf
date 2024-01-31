@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <string.h>
-
+int (*find_func(const char *format))(va_list);
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list c);
